@@ -29,7 +29,7 @@ jj=rem(index,m);
 
 % Print out model lat/lon from ii,jj points and calculate distance
 % Coarser grids = larger possible distance.  In that case, you might want to use a
-% spatial interpolation between nearby to get better results.
+% spatial interpolation between nearby grid points to get better results.
 % Don't reinvent the wheel... haversine.m works well here.
 lat_ij = nc{'lat'}(jj,ii);
 lon_ij = nc{'lon'}(jj,ii);
